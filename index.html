@@ -2,61 +2,7 @@
 <html lang="en">
   <head>
 	<link rel="icon" type="image/x-icon" href="/images/logo.png">
-	<style>
-		/* make hero full screen */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* full screen height */
-  display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-  overflow: hidden;
-  background: #000000; /* temporary background color */
-}
-
-/* slider container full height */
-.home-slider .slider-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-}
-
-/* remove extra overlay spacing if needed */
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 249, 249, 0.5); /* semi-transparent overlay */
-}
-
-/* text container center */
-.slider-text {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-
-/* hero text styling */
-.slider-text .text h1,
-.slider-text .text h2,
-.slider-text .text .subheading,
-.slider-text .text p {
-  color: #fff;
-}
-
-.slider-text .text h1 span {
-  color: #ffd700; /* highlight name */
-}
-
-	</style>
+	
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,7 +31,7 @@
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Rakhi Jaiswal</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span style="color:white" class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
@@ -103,43 +49,45 @@
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-  <div class="home-slider owl-carousel">
-    <div class="slider-item">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row slider-text">
-          <div class="text">
-            <span class="subheading">Hello!</span>
-            <h1>I'm <span>Rakhi Jaiswal</span></h1>
-            <h2>A Freelance Web Designer</h2>
-            <p>
-              <a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a>
-              <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+		  <div class="home-slider  owl-carousel">
+	      <div class="slider-item ">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Clark Thompson</span></h1>
+			            <h2 class="mb-4">A Freelance Web Designer</h2>
+			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
 
-    <div class="slider-item">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row slider-text">
-          <div class="text">
-            <span class="subheading">Hello!</span>
-            <h1>I'm a <span>Software Engineer</span> Web Designer</h1>
-            <p>
-              <a href="#contact-section" class="btn btn-primary py-3 px-4">Hire me</a>
-              <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+	      <div class="slider-item">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm a <span>web designer</span> based in London</h1>
+			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+    </section>
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
     		<div class="row d-flex">
