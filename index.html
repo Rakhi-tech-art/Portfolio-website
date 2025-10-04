@@ -667,7 +667,21 @@ teaching experience, blending technical expertise with communication and leaders
     </footer>
 
 	
-    
+    <script>
+  // Select all links inside the navbar
+  const navLinks = document.querySelectorAll('#ftco-nav a');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      const navbarCollapse = document.getElementById('ftco-nav');
+      // Only collapse if it's currently shown
+      if (navbarCollapse.classList.contains('show')) {
+        new bootstrap.Collapse(navbarCollapse).hide();
+      }
+    });
+  });
+</script>
+
   
 
   <!-- loader -->
